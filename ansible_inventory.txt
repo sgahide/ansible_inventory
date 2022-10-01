@@ -1,0 +1,27 @@
+Ansible_inventory
+
+sql01.xyz.com ansible_host=192.168.1.11 ansible_user=root ansible_ssh_pass = Lin$Pass
+sql02.xyz.com ansible_host=192.168.1.12 ansible_user=root ansible_ssh_pass = Lin$Pass
+web01.xyz.com ansible_host=192.168.1.13 ansible_connection=winrm ansible_user=administrator ansible_ssh_pass = Win$Pass
+web02.xyz.com ansible_host=192.168.1.14 ansible_connection=winrm ansible_user=administrator ansible_ssh_pass = Win$Pass
+web03.xyz.com ansible_host=192.168.1.15 ansible_connection=winrm ansible_user=administrator ansible_ssh_pass = Win$Pass
+
+
+
+[db_nodes]
+192.168.1.11
+192.168.1.12
+
+[web_nodes]
+192.168.1.13
+192.168.1.14
+192.168.1.15
+
+[boston_nodes]
+192.168.1.11
+192.168.1.13
+
+[dallas_nodes]
+192.168.1.12
+192.168.1.14
+192.168.1.15
